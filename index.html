@@ -10,6 +10,7 @@
 
   <title>Rati TMI</title>
   <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/custom.css" />
   <script src="./js/index.js" defer></script>
 </head>
 
@@ -73,22 +74,50 @@
     <section class="content-section" id="gallery">
       <h2>나만의 갤러리</h2>
       <p class="section-desc">내가 좋아했던 아티스트들</p>
+
       <div class="gallery-grid">
-        <img width="200" height="200" src="./images/twice.jpg" alt="트와이스">
-        <img width="200" height="200" src="./images/itzy.jpg" alt="있지">
-        <img width="200" height="200" src="./images/nmix.jpg" alt="엔믹스">
+        <figure class="gallery-item">
+          <img src="./images/twice.jpg" alt="트와이스">
+          <figcaption>트와이스 (TWICE)</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="./images/itzy.jpg" alt="있지">
+          <figcaption>있지 (ITZY)</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="./images/nmix.jpg" alt="엔믹스">
+          <figcaption>엔믹스 (NMIXX)</figcaption>
+        </figure>
       </div>
       <br>
       <div class="gallery-grid">
-        <img width="200" height="200" src="./images/qwer.jpg" alt="QWER">
-        <img width="200" height="200" src="./images/jyp.jpg" alt="박진영">
-        <img width="200" height="200" src="./images/eminem.jpg" alt="에미넴">
+        <figure class="gallery-item">
+          <img src="./images/qwer.jpg" alt="QWER">
+          <figcaption>QWER</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="./images/jyp.jpg" alt="박진영">
+          <figcaption>JYP (박진영)</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="./images/eminem.jpg" alt="에미넴">
+          <figcaption>에미넴 (Eminem)</figcaption>
+        </figure>
       </div>
       <br>
       <div class="gallery-grid">
-        <img width="200" height="200" src="./images/jackson.jpg" alt="마이클 잭슨">
-        <img width="200" height="200" src="./images/leessang.jpg" alt="리쌍">
-        <img width="200" height="200" src="./images/psy.jpg" alt="싸이">
+        <figure class="gallery-item">
+          <img src="./images/jackson.jpg" alt="마이클 잭슨">
+          <figcaption>마이클 잭슨</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="./images/leessang.jpg" alt="리쌍">
+          <figcaption>리쌍 (Leessang)</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="./images/psy.jpg" alt="싸이">
+          <figcaption>싸이 (PSY)</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -153,6 +182,13 @@
   <footer>
     <p>&copy; My Page</p>
   </footer>
+
+  <div id="image-viewer" class="image-overlay">
+    <div class="overlay-content">
+      <img id="full-image" src="" alt="큰 이미지 보기">
+      <p id="image-caption" class="overlay-caption"></p>
+    </div>
+  </div>
 </body>
 
 </html>
